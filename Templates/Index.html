@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Tenis</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Tienda de Tenis</h1>
+    
+    <!-- Sección para agregar un producto -->
+    <div>
+        <h2>Agregar Producto</h2>
+        <input type="text" id="name" placeholder="Nombre del producto">
+        <input type="number" id="price" placeholder="Precio">
+        <button onclick="addProduct()">Agregar</button>
+    </div>
+
+    <!-- Sección para buscar un producto por precio -->
+    <div>
+        <h2>Buscar Producto por Precio</h2>
+        <input type="number" id="searchPrice" placeholder="Precio">
+        <button onclick="searchProduct()">Buscar</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- Nueva sección para mostrar productos ordenados por precio -->
+    <div>
+        <h2>Mostrar Productos Ordenados por Precio</h2>
+        <button onclick="getSortedProducts()">Mostrar productos ordenados</button>
+        <pre id="sortedResult"></pre> <!-- Usamos <pre> para mostrar texto con formato -->
+    </div>
+
+    <!-- Conectar con script.js -->
+    <script src="../static/script.js"></script>
+</body>
+</html>
